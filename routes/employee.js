@@ -5,7 +5,8 @@ const connection= mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"manager",
-    database:"mean"
+    database:"mean",
+    port:"9099"
 });
 connection.connect();
 app.get("/",function(req,res){
